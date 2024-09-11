@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main()
@@ -7,7 +8,7 @@ int main()
     cout<<"Enter any number: ";
     cin>>n;
   bool  isPrime=true;
-  for(int i=2;i<=(n-1);i++)
+  for(int i=2;i<=sqrt(n);i++)
   {
     if(n%i==0)
     {
